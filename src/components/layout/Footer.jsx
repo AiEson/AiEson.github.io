@@ -11,10 +11,13 @@ const Footer = () => {
     iframe.style.border = 'none';
     iframe.style.overflow = 'hidden';
     
+    // Store a reference to the DOM node
+    const containerNode = mapContainerRef.current;
+    
     // Append the iframe to our container div
-    if (mapContainerRef.current) {
-      mapContainerRef.current.innerHTML = '';
-      mapContainerRef.current.appendChild(iframe);
+    if (containerNode) {
+      containerNode.innerHTML = '';
+      containerNode.appendChild(iframe);
 
       // Set up the content for the iframe with the ClusterMaps script
       const iframeContent = `
@@ -42,8 +45,9 @@ const Footer = () => {
     }
 
     return () => {
-      if (mapContainerRef.current) {
-        mapContainerRef.current.innerHTML = '';
+      // Use the stored reference in the cleanup function
+      if (containerNode) {
+        containerNode.innerHTML = '';
       }
     };
   }, []);
