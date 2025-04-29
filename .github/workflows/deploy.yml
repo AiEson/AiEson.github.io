@@ -3,11 +3,14 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # 设置要触发部署的分支
+      - master  # 设置要触发部署的分支
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # 添加权限配置
+    permissions:
+      contents: write      # 允许修改仓库内容
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
