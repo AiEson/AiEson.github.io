@@ -2,7 +2,7 @@ const publications = [
   {
     title: "ParticleGS: Particle-Based Dynamics Modeling of 3D Gaussians for Prior-free Motion Extrapolation",
     authors: "[Quan Jinsheng](https://scholar.google.com/citations?user=hRarFkEAAAAJ), **Wang Chunshi**, [Luo Yawei](https://scholar.google.com/citations?user=pnVwaGsAAAAJ)",
-    journal: "ArXiV, 2025. (preprint)",
+    journal: "arXiv, 2025. (preprint)",
     abstract: "This paper aims to model the dynamics of 3D Gaussians from visual observations to support temporal extrapolation. Existing dynamic 3D reconstruction methods often struggle to effectively learn underlying dynamics or rely heavily on manually defined physical priors, which limits their extrapolation capabilities. To address this issue, we propose a novel dynamic 3D Gaussian Splatting prior-free motion extrapolation framework based on particle dynamics systems. The core advantage of our method lies in its ability to learn differential equations that describe the dynamics of 3D Gaussians, and follow them during future frame extrapolation. Instead of simply fitting to the observed visual frame sequence, we aim to more effectively model the gaussian particle dynamics system. To this end, we introduce a dynamics latent state vector into the standard Gaussian kernel and design a dynamics latent space encoder to extract initial state. Subsequently, we introduce a Neural ODEs-based dynamics module that models the temporal evolution of Gaussian in dynamics latent space. Finally, a Gaussian kernel space decoder is used to decode latent state at the specific time step into the deformation. Experimental results demonstrate that the proposed method achieves comparable rendering quality with existing approaches in reconstruction tasks, and significantly outperforms them in future frame extrapolation. Our code is available at https://github.com/QuanJinSheng/ParticleGS.",
     links: {
       paper: "https://arxiv.org/abs/2505.20270",
@@ -88,6 +88,25 @@ const publications = [
   pages={2562--2569},
   year={2024},
   organization={IEEE}
+}`
+  },
+  {
+    title: "A Novel Two-Stage Approach for 3D Dental Tooth Instance Segmentation",
+    authors: "Chen Yuhan, **Wang Chunshi**, [Zhao Bin](https://zhaobinnku.github.io)",
+    journal: "MICCAI 2024 Workshop",
+    abstract: "Tooth CBCT instance segmentation is a foundational step in advancing digital dental health systems, with the precision of tooth segmentation playing a critical role in accurate medical diagnosis. Deep learning based methods face significant challenges in accurately locating and classifying teeth in 3D dental images, especially given the complex anatomical structures present in CBCT scans. Additionally, manually identifying and labeling each tooth from these scans is an extremely time-consuming and burdensome task for medical professionals. To address these issues, in this paper, we propose a two-stage semi-supervised method for tooth instance segmentation, along with innovative data preprocessing. Our method achieves a distinguished fourth place on the validation set of the “MICCAI STS 2024 Challenge Task 2”, outperforming other mainstream semi-supervised methods. Code for this implementation is made available at https://github.com/magic-fortune/MICCAI2024.",
+    links: {
+      paper: "https://link.springer.com/chapter/10.1007/978-3-031-88977-6_18",
+      code: "https://github.com/magic-fortune/MICCAI2024.git",
+      project: "https://www.codabench.org/competitions/3025/"
+    },
+    bibtex: `@inproceedings{chen2025novel,
+  title={A Novel Two-Stage Approach for 3D Dental Tooth Instance Segmentation},
+  author={Chen, Yuhan and Wang, Chunshi and Zhao, Bin},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={188--199},
+  year={2025},
+  organization={Springer}
 }`
   },
   {
