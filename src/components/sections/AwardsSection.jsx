@@ -3,6 +3,40 @@ import { motion } from 'framer-motion';
 import { Award } from 'lucide-react';
 import awards from '../../data/awards';
 
+// Helper function to parse text with {fig:filepath} format
+const parseTextWithFigures = (text) => {
+  if (!text || typeof text !== 'string') return text;
+  
+  // Check if the text contains our custom format
+  if (!text.includes('{fig:')) return text;
+  
+  // Split the text by the figure pattern
+  const parts = text.split(/\{fig:([^}]+)\}/);
+  
+  // If there's only one part, return the original text
+  if (parts.length === 1) return text;
+  
+  // Map through the parts and render images for the figure paths
+  return parts.map((part, index) => {
+    // Even indices are regular text, odd indices are figure paths
+    if (index % 2 === 0) return part;
+    
+    // For odd indices, render an image with the path
+    return (
+      <img 
+        key={`fig-${index}`}
+        src={`${process.env.PUBLIC_URL}${part}`}
+        alt="Icon"
+        className="inline-block h-4 w-auto mr-1 align-text-bottom"
+        onError={(e) => {
+          console.error('Figure image failed to load:', part, e);
+          e.target.style.display = 'none';
+        }}
+      />
+    );
+  });
+};
+
 const AwardsSection = () => {
   return (
     <section id="awards" className="py-20 bg-gray-100">
@@ -38,7 +72,7 @@ const AwardsSection = () => {
                       </motion.div>
                     </div>
                     <div className="md:w-3/4">
-                      <h3 className="text-xl font-semibold mb-2">{award.name}</h3>
+                      <h3 className="text-xl font-semibold mb-2">{parseTextWithFigures(award.name)}</h3>
                       <p className="text-gray-600">{award.description}</p>
                     </div>
                   </div>

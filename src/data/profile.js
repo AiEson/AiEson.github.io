@@ -13,6 +13,11 @@ const profile = {
       degree: "Master"
     },
     {
+      period: "June 2025 - Present",
+      institution: "{fig:./imgs/profile/Tencent_Logo.svg}Hunyuan3D",
+      degree: "Research Intern, working closely with [Liu Jian](https://hitcslj.github.io/), supervised by [Li Yang](https://yang-l1.github.io/)"
+    },
+    {
       period: "May 2021 - June 2025",
       institution: "Guilin University of Electronic Technology",
       degree: "Bachelor"
@@ -20,6 +25,7 @@ const profile = {
   ],
   researchInterests: [
     "3D Vision", 
+    "3D Generation", 
     "Interactive Audio Generation", 
     "Semi-supervised Learning"
   ]

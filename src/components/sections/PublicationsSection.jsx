@@ -334,11 +334,11 @@ const PublicationsSection = () => {
               >
                 {copySuccess ? (
                   <>
-                    <span className="mr-2">已复制</span> ✓
+                    <span className="mr-2">Copied</span> ✓
                   </>
                 ) : (
                   <>
-                    <Copy size={16} className="mr-2" /> 复制BibTeX
+                    <Copy size={16} className="mr-2" /> Copy BibTeX
                   </>
                 )}
               </motion.button>

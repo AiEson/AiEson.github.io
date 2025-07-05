@@ -1,5 +1,11 @@
 const awards = [
   {
+    name: "{fig:./imgs/profile/Tencent_Logo.svg} 2025 Tencent Rhino-bird Research Elite Program",
+    year: "2025",
+    organization: "Tencent",
+    description: "This program aims to select students who are passionate and have potential in scientific research, helping them explore the path of research, and working with universities to cultivate a group of pioneers who dare to seek truth and support technological innovation."
+  },
+  {
     name: "🥉 1st Semi-supervised Teeth Segmentation MICCAI Challenge, Third Place Award",
     year: "2024",
     organization: "MICCAI 2023 ToothFairy",

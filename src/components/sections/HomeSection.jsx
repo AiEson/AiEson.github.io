@@ -3,6 +3,101 @@ import { motion } from 'framer-motion';
 import { Mail, Github, BookOpen } from 'lucide-react';
 import profile from '../../data/profile';
 
+// Helper function to parse text with {fig:filepath} format
+const parseTextWithFigures = (text) => {
+  if (!text || typeof text !== 'string') return text;
+  
+  // Check if the text contains our custom format
+  if (!text.includes('{fig:')) return text;
+  
+  // Split the text by the figure pattern
+  const parts = text.split(/\{fig:([^}]+)\}/);
+  
+  // If there's only one part, return the original text
+  if (parts.length === 1) return text;
+  
+  // Map through the parts and render images for the figure paths
+  return parts.map((part, index) => {
+    // Even indices are regular text, odd indices are figure paths
+    if (index % 2 === 0) return part;
+    
+    // For odd indices, render an image with the path
+    return (
+      <img 
+        key={`fig-${index}`}
+        src={`${process.env.PUBLIC_URL}${part}`}
+        alt="Icon"
+        className="inline-block h-4 w-auto mr-1 align-text-bottom"
+        onError={(e) => {
+          console.error('Figure image failed to load:', part, e);
+          e.target.style.display = 'none';
+        }}
+      />
+    );
+  });
+};
+
+// Helper function to parse markdown links [text](url)
+const parseMarkdownLinks = (text) => {
+  if (!text || typeof text !== 'string') return text;
+  
+  // Check if the text contains markdown links
+  if (!text.includes('[') || !text.includes('](')) return text;
+  
+  // Parse the text for markdown links [text](url)
+  const parts = [];
+  let lastIndex = 0;
+  const linkRegex = /\[(.*?)\]\((.*?)\)/g;
+  let match;
+  
+  while ((match = linkRegex.exec(text)) !== null) {
+    // Add text before the link
+    if (match.index > lastIndex) {
+      parts.push({
+        type: 'text',
+        content: text.substring(lastIndex, match.index)
+      });
+    }
+    
+    // Add the link
+    parts.push({
+      type: 'link',
+      content: match[1], // Text inside []
+      url: match[2]      // URL inside ()
+    });
+    
+    lastIndex = match.index + match[0].length;
+  }
+  
+  // Add any remaining text
+  if (lastIndex < text.length) {
+    parts.push({
+      type: 'text',
+      content: text.substring(lastIndex)
+    });
+  }
+  
+  // Render the parts
+  return parts.map((part, index) => {
+    if (part.type === 'text') {
+      return part.content;
+    } else if (part.type === 'link') {
+      return (
+        <a 
+          key={`link-${index}`}
+          href={part.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          {part.content}
+        </a>
+      );
+    }
+    return null;
+  });
+};
+
 const HomeSection = () => {
   return (
     <section id="home" className="py-20">
@@ -34,7 +129,7 @@ const HomeSection = () => {
               {profile.education.map((edu, index) => (
                 <div key={index} className="border-l-4 border-blue-500 pl-4">
                   <p className="font-medium">{edu.period}</p>
-                  <p>{edu.institution}, {edu.degree}</p>
+                  <p>{parseTextWithFigures(edu.institution)}, {parseMarkdownLinks(edu.degree)}</p>
                 </div>
               ))}
             </div>

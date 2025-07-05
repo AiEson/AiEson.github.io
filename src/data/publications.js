@@ -1,5 +1,17 @@
 const publications = [
   {
+    title: "SonicGauss: Interactive Position-aware Impact Audio Synthesis for 3D Gaussian Splatting",
+    authors: "**Wang Chunshi**, [Li Hongxing](https://github.com/hongxingli319), [Luo Yawei](https://scholar.google.com/citations?user=pnVwaGsAAAAJ)",
+    journal: "33rd ACM International Conference on Multimedia (ACMMM), 2025.",
+    abstract: "While 3D Gaussian representations (3DGS) have proven effective for modeling the geometry and appearance of objects, their potential for capturing other physical attributes—such as sound—remains largely unexplored. In this paper, we present a novel framework dubbed SonicGauss for synthesizing impact sounds from 3DGS representations by leveraging their inherent geometric and material properties. Specifically, we integrate a diffusion-based sound synthesis model with a PointTransformer-based feature extractor to infer material characteristics and spatial-acoustic correlations directly from Gaussian ellipsoids. Our approach supports spatially varying sound responses conditioned on impact locations and generalizes across a wide range of object categories. Experiments on the ObjectFolder dataset and real-world recordings demonstrate that our method produces realistic, position-aware auditory feedback. The results highlight the framework's robustness and generalization ability, offering a promising step toward bridging 3D visual representations and interactive sound synthesis.",
+    links: {
+      paper: "#",
+      code: "#",
+      project: null
+    },
+    bibtex: `...`
+  },
+  {
     title: "ParticleGS: Particle-Based Dynamics Modeling of 3D Gaussians for Prior-free Motion Extrapolation",
     authors: "[Quan Jinsheng](https://scholar.google.com/citations?user=hRarFkEAAAAJ), **Wang Chunshi**, [Luo Yawei](https://scholar.google.com/citations?user=pnVwaGsAAAAJ)",
     journal: "arXiv, 2025. (preprint)",
