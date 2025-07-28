@@ -103,6 +103,25 @@ const publications = [
 }`
   },
   {
+    title: "SCANet: Split Coordinate Attention Network for Building Footprint Extraction",
+    authors: "**Wang Chunshi**, [Zhao Bin](https://zhaobinnku.github.io), Ding Shuxue",
+    journal: "International Conference on Neural Information Processing (ICONIP'24)",
+    abstract: "Building footprint extraction holds immense significance in remote sensing image analysis and has great value in urban planning, land use, environmental protection and disaster assessment. Despite the progress made by conventional and deep learning approaches in this field, they continue to encounter significant challenges. This paper introduces a novel plug-and-play attention module, Split Coordinate Attention (SCA), which ingeniously captures spatially remote interactions by employing two spatial range of pooling kernels, strategically encoding each channel along x and y planes, and separately performs a series of split operations for each feature group, thus enabling more efficient semantic feature extraction. By inserting into a 2D CNN to form an effective SCANet, our SCANet outperforms recent SOTA methods on the public Wuhan University (WHU) Building Dataset and Massachusetts Building Dataset in terms of various metrics. Particularly SCANet achieves the best IoU, 91.61% and 75.49% for the two datasets.",
+    links: {
+      paper: "https://doi.org/10.1007/978-981-96-6594-5_8",
+      code: "https://github.com/AiEson/SCANet.git",
+      project: null
+    },
+    bibtex: `@inproceedings{wang2024scanet,
+  title={SCANet: Split Coordinate Attention Network for Building Footprint Extraction},
+  author={Wang, Chunshi and Zhao, Bin and Ding, Shuxue},
+  booktitle={International Conference on Neural Information Processing},
+  pages={93--105},
+  year={2024},
+  organization={Springer}
+}`
+  },
+  {
     title: "A Novel Two-Stage Approach for 3D Dental Tooth Instance Segmentation",
     authors: "Chen Yuhan, **Wang Chunshi**, [Zhao Bin](https://zhaobinnku.github.io)",
     journal: "MICCAI 2024 Workshop",
