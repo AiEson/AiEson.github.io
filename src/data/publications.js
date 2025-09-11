@@ -1,15 +1,62 @@
 const publications = [
   {
+    title: "X-Part: high fidelity and structure coherent shape decomposition",
+    authors: "[Yan Xinhao](https://scholar.google.com/citations?user=rgfQe54AAAAJ), [Xu Jiachen](https://scholar.google.com/citations?user=GcznIXIAAAAJ), [Li Yang](https://yang-l1.github.io/), [Ma Changfeng](https://www.njumeta.com/macf/), [Yang Yunhan](https://yhyang-myron.github.io/), **Wang Chunshi**, [Zhao Zibo](https://maikouuu.github.io/), [Lai Zeqiang](https://zeqiang-lai.github.io/), [Zhao Yunfei](https://scholar.google.com/citations?user=gnQMmMQAAAAJ), Chen Zhuo, Guo Chunchao",
+    journal: "arXiv, 2025. (preprint)",
+    abstract: "Generating 3D shapes at part level is pivotal for downstream applications such as mesh retopology, UV mapping, and 3D printing. However, existing part-based generation methods often lack sufficient controllability and suffer from poor semantically meaningful decomposition. To this end, we introduce X-Part, a controllable generative model designed to decompose a holistic 3D object into semantically meaningful and structurally coherent parts with high geometric fidelity. X-Part exploits the bounding box as prompts for the part generation and injects point-wise semantic features for meaningful decomposition. Furthermore, we design an editable pipeline for interactive part generation. Extensive experimental results show that X-Part achieves state-of-the-art performance in part-level shape generation. This work establishes a new paradigm for creating production-ready, editable, and structurally sound 3D assets. Codes will be released for public research.",
+    links: {
+      paper: "https://arxiv.org/abs/2509.08643",
+      code: null,
+      project: null
+    },
+    bibtex: `@misc{yan2025xparthighfidelitystructure,
+      title={X-Part: high fidelity and structure coherent shape decomposition}, 
+      author={Xinhao Yan and Jiachen Xu and Yang Li and Changfeng Ma and Yunhan Yang and Chunshi Wang and Zibo Zhao and Zeqiang Lai and Yunfei Zhao and Zhuo Chen and Chunchao Guo},
+      year={2025},
+      eprint={2509.08643},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR},
+      url={https://arxiv.org/abs/2509.08643}, 
+}`
+  },
+  {
+    title: "P3-SAM: Native 3D Part Segmentation",
+    authors: "[Ma Changfeng](https://www.njumeta.com/macf/), [Li Yang](https://yang-l1.github.io/), [Yan Xinhao](https://scholar.google.com/citations?user=rgfQe54AAAAJ), [Xu Jiachen](https://scholar.google.com/citations?user=GcznIXIAAAAJ), [Yang Yunhan](https://yhyang-myron.github.io/), **Wang Chunshi**, [Zhao Zibo](https://maikouuu.github.io/), Guo Yanwen, Chen Zhuo, Guo Chunchao",
+    journal: "arXiv, 2025. (preprint)",
+    abstract: "Segmenting 3D assets into their constituent parts is crucial for enhancing 3D understanding, facilitating model reuse, and supporting various applications such as part generation. However, current methods face limitations such as poor robustness when dealing with complex objects and cannot fully automate the process. In this paper, we propose a native 3D point-promptable part segmentation model termed P3-SAM, designed to fully automate the segmentation of any 3D objects into components. Inspired by SAM, P3-SAM consists of a feature extractor, multiple segmentation heads, and an IoU predictor, enabling interactive segmentation for users. We also propose an algorithm to automatically select and merge masks predicted by our model for part instance segmentation. Our model is trained on a newly built dataset containing nearly 3.7 million models with reasonable segmentation labels. Comparisons show that our method achieves precise segmentation results and strong robustness on any complex objects, attaining state-of-the-art performance. Our code will be released soon.",
+    links: {
+      paper: "https://arxiv.org/abs/2509.06784",
+      code: null,
+      project: null
+    },
+    bibtex: `@misc{ma2025p3samnative3dsegmentation,
+      title={P3-SAM: Native 3D Part Segmentation}, 
+      author={Changfeng Ma and Yang Li and Xinhao Yan and Jiachen Xu and Yunhan Yang and Chunshi Wang and Zibo Zhao and Yanwen Guo and Zhuo Chen and Chunchao Guo},
+      year={2025},
+      eprint={2509.06784},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.06784}, 
+}`
+  },
+  {
     title: "SonicGauss: Interactive Position-aware Impact Audio Synthesis for 3D Gaussian Splatting",
     authors: "**Wang Chunshi**, [Li Hongxing](https://github.com/hongxingli319), [Luo Yawei](https://scholar.google.com/citations?user=pnVwaGsAAAAJ)",
     journal: "33rd ACM International Conference on Multimedia (ACMMM), 2025.",
     abstract: "While 3D Gaussian representations (3DGS) have proven effective for modeling the geometry and appearance of objects, their potential for capturing other physical attributes—such as sound—remains largely unexplored. In this paper, we present a novel framework dubbed SonicGauss for synthesizing impact sounds from 3DGS representations by leveraging their inherent geometric and material properties. Specifically, we integrate a diffusion-based sound synthesis model with a PointTransformer-based feature extractor to infer material characteristics and spatial-acoustic correlations directly from Gaussian ellipsoids. Our approach supports spatially varying sound responses conditioned on impact locations and generalizes across a wide range of object categories. Experiments on the ObjectFolder dataset and real-world recordings demonstrate that our method produces realistic, position-aware auditory feedback. The results highlight the framework's robustness and generalization ability, offering a promising step toward bridging 3D visual representations and interactive sound synthesis.",
     links: {
-      paper: "#",
-      code: "#",
-      project: null
+      paper: "https://arxiv.org/abs/2507.19835",
+      code: "https://github.com/AiEson/SonicGauss",
+      project: "https://chunshi.wang/SonicGauss/"
     },
-    bibtex: `...`
+    bibtex: `@misc{wang2025sonicgauss,
+    title={SonicGauss: Position-Aware Physical Sound Synthesis for 3D Gaussian Representations},
+    author={Chunshi Wang and Hongxing Li and Yawei Luo},
+    year={2025},
+    eprint={2507.19835},
+    archivePrefix={arXiv},
+    primaryClass={cs.SD}
+}`
   },
   {
     title: "ParticleGS: Particle-Based Dynamics Modeling of 3D Gaussians for Prior-free Motion Extrapolation",
