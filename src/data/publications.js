@@ -20,6 +20,26 @@ const publications = [
 }`
   },
   {
+    title: "QuadGPT: Native Quadrilateral Mesh Generation with Autoregressive Models",
+    authors: "[Liu Jian](https://hitcslj.github.io/), **Wang Chunshi**, [Guo Song](https://scholar.google.com/citations?user=Ib-sizwAAAAJ), [Weng Haohan](https://whaohan.github.io/), Zhou Zhen, [Li Zhiqi](https://scholar.google.com/citations?user=AnyChZAAAAAJ), Yu Jiaao, Zhu Yiling, Xu Jing, [Lei Biwen](https://scholar.google.com/citations?user=5d5Y9BoAAAAJ), Chen Zhuo, Guo Chunchao",
+    journal: "arXiv, 2025. (preprint)",
+    abstract: "The generation of quadrilateral-dominant meshes is a cornerstone of professional 3D content creation. However, existing generative models generate quad meshes by first generating triangle meshes and then merging triangles into quadrilaterals with some specific rules, which typically produces quad meshes with poor topology. In this paper, we introduce QuadGPT, the first autoregressive framework for generating quadrilateral meshes in an end-to-end manner. QuadGPT formulates this as a sequence prediction paradigm, distinguished by two key innovations: a unified tokenization method to handle mixed topologies of triangles and quadrilaterals, and a specialized Reinforcement Learning fine-tuning method tDPO for better generation quality. Extensive experiments demonstrate that QuadGPT significantly surpasses previous triangle-to-quad conversion pipelines in both geometric accuracy and topological quality. Our work establishes a new benchmark for native quad-mesh generation and showcases the power of combining large-scale autoregressive models with topology-aware RL refinement for creating structured 3D assets.",
+    links: {
+      paper: "https://arxiv.org/abs/2509.21420",
+      code: null,
+      project: null
+    },
+    bibtex: `@misc{liu2025quadgptnativequadrilateralmesh,
+      title={QuadGPT: Native Quadrilateral Mesh Generation with Autoregressive Models}, 
+      author={Jian Liu and Chunshi Wang and Song Guo and Haohan Weng and Zhen Zhou and Zhiqi Li and Jiaao Yu and Yiling Zhu and Jing Xu and Biwen Lei and Zhuo Chen and Chunchao Guo},
+      year={2025},
+      eprint={2509.21420},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.21420}, 
+}`
+  },
+  {
     title: "X-Part: high fidelity and structure coherent shape decomposition",
     authors: "[Yan Xinhao](https://scholar.google.com/citations?user=rgfQe54AAAAJ), [Xu Jiachen](https://scholar.google.com/citations?user=GcznIXIAAAAJ), [Li Yang](https://yang-l1.github.io/), [Ma Changfeng](https://www.njumeta.com/macf/), [Yang Yunhan](https://yhyang-myron.github.io/), **Wang Chunshi**, [Zhao Zibo](https://maikouuu.github.io/), [Lai Zeqiang](https://zeqiang-lai.github.io/), [Zhao Yunfei](https://scholar.google.com/citations?user=gnQMmMQAAAAJ), Chen Zhuo, Guo Chunchao",
     journal: "arXiv, 2025. (preprint)",
