@@ -31,7 +31,7 @@ const Footer = () => {
         </head>
         <body>
           <div id="map-container">
-            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0e6d1QaxPDH1qo5fZqCrL593x0bjGCG6HqQF3plgQP8"></script>
+            <script type="text/javascript" id="clstr_globe" src="https://clustrmaps.com/globe.js?d=0e6d1QaxPDH1qo5fZqCrL593x0bjGCG6HqQF3plgQP8" onerror="console.error('Failed to load ClusterMaps widget')"></script>
           </div>
         </body>
         </html>
