@@ -18,7 +18,7 @@ const profile = {
       degree: "Research Intern, working closely with [Liu Jian](https://hitcslj.github.io/), supervised by [Li Yang](https://yang-l1.github.io/)"
     },
     {
-      period: "May 2021 - June 2025",
+      period: "September 2021 - June 2025",
       institution: "Guilin University of Electronic Technology",
       degree: "Bachelor"
     }
