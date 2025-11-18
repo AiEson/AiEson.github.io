@@ -2,7 +2,7 @@ const publications = [
   {
     title: "Part-X-MLLM: Part-aware 3D Multimodal Large Language Model",
     authors: "**Wang Chunshi***, [Ye Junliang](https://jamesyjl.github.io/), [Yang Yunhan](https://yhyang-myron.github.io/), [Li Yang](https://yang-l1.github.io/), Lin Zizhuo, [Zhu Jun](https://ml.cs.tsinghua.edu.cn/~jun/), Chen Zhuo, [Luo Yawei](https://scholar.google.com/citations?user=pnVwaGsAAAAJ), Guo Chunchao",
-    journal: "Tencent Hunyuan3D Technical Report",
+    journal: "arXiv, 2025. (preprint)",
     abstract: "We introduce Part-X-MLLM, a native 3D multimodal large language model that unifies diverse 3D tasks by formulating them as programs in a structured, executable grammar. Given an RGB point cloud and a natural language prompt, our model autoregressively generates a single, coherent token sequence encoding part-level bounding boxes, semantic descriptions, and edit commands. This structured output serves as a versatile interface to drive downstream geometry-aware modules for part-based generation and editing. By decoupling the symbolic planning from the geometric synthesis, our approach allows any compatible geometry engine to be controlled through a single, language-native frontend. We pre-train a dual-encoder architecture to disentangle structure from semantics and instruction-tune the model on a large-scale, part-centric dataset. Experiments demonstrate that our model excels at producing high-quality, structured plans, enabling state-of-the-art performance in grounded Q&A, compositional generation, and localized editing through one unified interface.",
     links: {
       paper: "https://arxiv.org/abs/2511.13647",
