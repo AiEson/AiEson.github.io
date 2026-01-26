@@ -1,6 +1,10 @@
 const news = [
   {
     date: "January 2026",
+    content: "🎉 Two papers accepted by ICLR'26"
+  },
+  {
+    date: "January 2026",
     content: "Served as reviewer for Pattern Recognition"
   },
   {

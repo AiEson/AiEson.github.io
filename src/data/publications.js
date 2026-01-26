@@ -2,7 +2,7 @@ const publications = [
   {
     title: "Part-X-MLLM: Part-aware 3D Multimodal Large Language Model",
     authors: "**Wang Chunshi***, [Ye Junliang*](https://jamesyjl.github.io/), [Yang Yunhan*](https://yhyang-myron.github.io/), [Li Yang](https://yang-l1.github.io/), Lin Zizhuo, [Zhu Jun](https://ml.cs.tsinghua.edu.cn/~jun/), Chen Zhuo, [Luo Yawei](https://scholar.google.com/citations?user=pnVwaGsAAAAJ), Guo Chunchao | *Equal contribution",
-    journal: "arXiv, 2025. (preprint)",
+    journal: "International Conference on Learning Representations (ICLR), 2026.",
     abstract: "We introduce Part-X-MLLM, a native 3D multimodal large language model that unifies diverse 3D tasks by formulating them as programs in a structured, executable grammar. Given an RGB point cloud and a natural language prompt, our model autoregressively generates a single, coherent token sequence encoding part-level bounding boxes, semantic descriptions, and edit commands. This structured output serves as a versatile interface to drive downstream geometry-aware modules for part-based generation and editing. By decoupling the symbolic planning from the geometric synthesis, our approach allows any compatible geometry engine to be controlled through a single, language-native frontend. We pre-train a dual-encoder architecture to disentangle structure from semantics and instruction-tune the model on a large-scale, part-centric dataset. Experiments demonstrate that our model excels at producing high-quality, structured plans, enabling state-of-the-art performance in grounded Q&A, compositional generation, and localized editing through one unified interface.",
     links: {
       paper: "https://arxiv.org/abs/2511.13647",
@@ -42,7 +42,7 @@ const publications = [
   {
     title: "QuadGPT: Native Quadrilateral Mesh Generation with Autoregressive Models",
     authors: "[Liu Jian](https://hitcslj.github.io/), **Wang Chunshi**, [Guo Song](https://scholar.google.com/citations?user=Ib-sizwAAAAJ), [Weng Haohan](https://whaohan.github.io/), Zhou Zhen, [Li Zhiqi](https://scholar.google.com/citations?user=AnyChZAAAAAJ), Yu Jiaao, Zhu Yiling, Xu Jing, [Lei Biwen](https://scholar.google.com/citations?user=5d5Y9BoAAAAJ), Chen Zhuo, Guo Chunchao",
-    journal: "arXiv, 2025. (preprint)",
+    journal: "International Conference on Learning Representations (ICLR), 2026.",
     abstract: "The generation of quadrilateral-dominant meshes is a cornerstone of professional 3D content creation. However, existing generative models generate quad meshes by first generating triangle meshes and then merging triangles into quadrilaterals with some specific rules, which typically produces quad meshes with poor topology. In this paper, we introduce QuadGPT, the first autoregressive framework for generating quadrilateral meshes in an end-to-end manner. QuadGPT formulates this as a sequence prediction paradigm, distinguished by two key innovations: a unified tokenization method to handle mixed topologies of triangles and quadrilaterals, and a specialized Reinforcement Learning fine-tuning method tDPO for better generation quality. Extensive experiments demonstrate that QuadGPT significantly surpasses previous triangle-to-quad conversion pipelines in both geometric accuracy and topological quality. Our work establishes a new benchmark for native quad-mesh generation and showcases the power of combining large-scale autoregressive models with topology-aware RL refinement for creating structured 3D assets.",
     links: {
       paper: "https://arxiv.org/abs/2509.21420",
