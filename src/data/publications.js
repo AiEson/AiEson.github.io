@@ -62,7 +62,7 @@ const publications = [
   {
     title: "X-Part: high fidelity and structure coherent shape decomposition",
     authors: "[Yan Xinhao](https://scholar.google.com/citations?user=rgfQe54AAAAJ), [Xu Jiachen](https://scholar.google.com/citations?user=GcznIXIAAAAJ), [Li Yang](https://yang-l1.github.io/), [Ma Changfeng](https://www.njumeta.com/macf/), [Yang Yunhan](https://yhyang-myron.github.io/), **Wang Chunshi**, [Zhao Zibo](https://maikouuu.github.io/), [Lai Zeqiang](https://zeqiang-lai.github.io/), [Zhao Yunfei](https://scholar.google.com/citations?user=gnQMmMQAAAAJ), Chen Zhuo, Guo Chunchao",
-    journal: "arXiv, 2025. (preprint)",
+    journal: "Computer Vision and Pattern Recognition (CVPR), 2026.",
     abstract: "Generating 3D shapes at part level is pivotal for downstream applications such as mesh retopology, UV mapping, and 3D printing. However, existing part-based generation methods often lack sufficient controllability and suffer from poor semantically meaningful decomposition. To this end, we introduce X-Part, a controllable generative model designed to decompose a holistic 3D object into semantically meaningful and structurally coherent parts with high geometric fidelity. X-Part exploits the bounding box as prompts for the part generation and injects point-wise semantic features for meaningful decomposition. Furthermore, we design an editable pipeline for interactive part generation. Extensive experimental results show that X-Part achieves state-of-the-art performance in part-level shape generation. This work establishes a new paradigm for creating production-ready, editable, and structurally sound 3D assets. Codes will be released for public research.",
     links: {
       paper: "https://arxiv.org/abs/2509.08643",
