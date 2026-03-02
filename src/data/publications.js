@@ -60,6 +60,18 @@ const publications = [
 }`
   },
   {
+    title: "UniVerse3D: Emerging Properties of Unified Multimodal Models in 3D Understanding and Generation",
+    authors: "[Ye Junliang](https://jamesyjl.github.io/), [Huang Zehuan](https://huanngzh.github.io/),[Qu Yansong](https://quyans.github.io/), **Wang Chunshi**, [Yang Yunhan](https://yhyang-myron.github.io/), [Li Yang](https://yang-l1.github.io/), [Luo Yawei](https://scholar.google.com/citations?user=pnVwaGsAAAAJ), Chen Zhuo, Sheng Lu, Zhu Jun, Chunchao Guo",
+    journal: "Computer Vision and Pattern Recognition (CVPR) Findings, 2026.",
+    abstract: "While unified multimodal models have made progress in the 2D domain, extending this paradigm to 3D remains in its nascent stages, hindered by data scarcity, high generative complexity, and the lack of well-aligned semantic representations. To address these challenges, we introduce UniVerse3D, a foundational model that unifies 3D understanding, generation, and editing. To overcome the data bottleneck, we construct UniVerse-1M, a large-scale, reasoning-centric dataset comprising rich, interleaved text–image–3D data designed to foster deep reasoning and world-knowledge modeling. Architecturally, we adopt a hybrid design in which a powerful Vision Language Model serves as the multimodal “brain” for complex understanding and reasoning, while a 3D diffusion decoder specializes in high-quality content creation and editing. This setup introduces 3D modeling capabilities while preserving the pretrained multimodal priors of the VLM. Driven by our proposed dataset and architectural design, UniVerse3D effectively incorporates vision–language knowledge into the 3D domain, enabling fine-grained 3D understanding, extending generation capabilities from descriptive synthesis to concept-level, reasoning-driven 3D creation, and supporting stable, consistent text-guided 3D editing.",
+    links: {
+      paper: null,
+      code: null,
+      project: null
+    },
+    bibtex: `Coming soon...`
+  },
+  {
     title: "X-Part: high fidelity and structure coherent shape decomposition",
     authors: "[Yan Xinhao](https://scholar.google.com/citations?user=rgfQe54AAAAJ), [Xu Jiachen](https://scholar.google.com/citations?user=GcznIXIAAAAJ), [Li Yang](https://yang-l1.github.io/), [Ma Changfeng](https://www.njumeta.com/macf/), [Yang Yunhan](https://yhyang-myron.github.io/), **Wang Chunshi**, [Zhao Zibo](https://maikouuu.github.io/), [Lai Zeqiang](https://zeqiang-lai.github.io/), [Zhao Yunfei](https://scholar.google.com/citations?user=gnQMmMQAAAAJ), Chen Zhuo, Guo Chunchao",
     journal: "Computer Vision and Pattern Recognition (CVPR), 2026.",
