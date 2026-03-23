@@ -1,5 +1,8 @@
 const awards = [
   {
+    name: "🎓 Tencent Project UP）��云计划 is Tencent's talent program for top global tech students, aiming to nurture future technology leaders through cutting-edge research opportunities and mentorship."
+  },
+  {
     name: "{fig:./imgs/profile/Tencent_Logo.svg} 2025 Tencent Rhino-bird Research Elite Program",
     year: "2025",
     organization: "Tencent",
