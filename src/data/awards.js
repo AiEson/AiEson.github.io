@@ -3,7 +3,7 @@ const awards = [
     name: "🎓 Tencent Project UP（青云计划）",
     year: "2026",
     organization: "Tencent",
-    description: "青云计划 is Tencent's talent program for top global tech students, aiming to nurture future technology leaders through cutting-edge research opportunities and mentorship."
+    description: "Project UP（青云计划） is Tencent's talent program for top global tech students, aiming to nurture future technology leaders through cutting-edge research opportunities and mentorship."
   },
   {
     name: "{fig:./imgs/profile/Tencent_Logo.svg} 2025 Tencent Rhino-bird Research Elite Program",
