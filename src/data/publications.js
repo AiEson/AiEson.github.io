@@ -40,6 +40,26 @@ const publications = [
 }`
   },
   {
+    title: "SARe: Structure-Aware Large-Scale 3D Fragment Reassembly",
+    authors: "[Hanze Jia](https://www.hzjia.website/), **Wang Chunshi**, Yuxiao Yang, Zhonghua Jiang, [Yawei Luo](https://scholar.google.com/citations?user=pnVwaGsAAAAJ), Shuainan Ye, Tan Tang",
+    journal: "arXiv preprint, 2026.",
+    abstract: "3D fragment reassembly aims to recover the rigid poses of unordered fragment point clouds or meshes in a common object coordinate system to reconstruct the complete shape. The problem becomes particularly challenging as the number of fragments grows, since the target shape is unknown and fragments provide weak semantic cues. Existing end-to-end approaches are prone to cascading failures due to unreliable contact reasoning, most notably inaccurate fragment adjacencies. To address this, we propose Structure-Aware Reassembly (SARe), a generative framework with SARe-Gen for Euclidean-space assembly generation and SARe-Refine for inference-time refinement, with explicit contact modeling. SARe-Gen jointly predicts fracture-surface token probabilities and an inter-fragment contact graph to localize contact regions and infer candidate adjacencies. It adopts a query-point-based conditioning scheme and extracts aligned local geometric tokens at query locations from a frozen geometry encoder, yielding queryable structural representations without additional structural pretraining. We further introduce an inference-time refinement stage, SARe-Refine. By verifying candidate contact edges with geometric-consistency checks, it selects reliable substructures and resamples the remaining uncertain regions while keeping verified parts fixed, leading to more stable and consistent assemblies in the many-fragment regime. We evaluate SARe across three settings, including synthetic fractures, simulated fractures from scanned real objects, and real physically fractured scans. The results demonstrate state-of-the-art performance, with more graceful degradation and higher success rates as the fragment count increases in challenging large-scale reassembly.",
+    links: {
+      paper: "https://arxiv.org/abs/2603.21611",
+      code: null,
+      project: "https://cyber-loafing.github.io/SARe/"
+    },
+    bibtex: `@misc{jia2026sarestructureaware,
+      title={SARe: Structure-Aware Large-Scale 3D Fragment Reassembly},
+      author={Hanze Jia and Chunshi Wang and Yuxiao Yang and Zhonghua Jiang and Yawei Luo and Shuainan Ye and Tan Tang},
+      year={2026},
+      eprint={2603.21611},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.21611},
+}`
+  },
+  {
     title: "QuadGPT: Native Quadrilateral Mesh Generation with Autoregressive Models",
     authors: "[Liu Jian](https://hitcslj.github.io/), **Wang Chunshi**, [Guo Song](https://scholar.google.com/citations?user=Ib-sizwAAAAJ), [Weng Haohan](https://whaohan.github.io/), Zhou Zhen, [Li Zhiqi](https://scholar.google.com/citations?user=AnyChZAAAAAJ), Yu Jiaao, Zhu Yiling, Xu Jing, [Lei Biwen](https://scholar.google.com/citations?user=5d5Y9BoAAAAJ), Chen Zhuo, Guo Chunchao",
     journal: "International Conference on Learning Representations (ICLR), 2026.",
