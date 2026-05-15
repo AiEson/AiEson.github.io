@@ -20,6 +20,23 @@ const publications = [
 }`
   },
   {
+    title: "PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World",
+    authors: "[Yang Yunhan*](https://yhyang-myron.github.io/), **Wang Chunshi***, [Ye Junliang*](https://jamesyjl.github.io/), [Li Yang](https://yang-l1.github.io/), Chen Zanxin, Huang Zehuan, Mu Yao, Chen Zhuo, Guo Chunchao, Liu Xihui | *Equal contribution",
+    journal: "International Conference on Machine Learning (ICML), 2026.",
+    abstract: "Synthesizing physics-grounded 3D assets is a critical bottleneck for interactive virtual worlds and embodied AI. Existing methods predominantly focus on static geometry, overlooking the functional properties essential for interaction. We propose that interactive asset generation must be rooted in functional logic and hierarchical physics. To bridge this gap, we introduce PhysForge, a decoupled two-stage framework supported by PhysDB, a large-scale dataset of 150,000 assets with four-tier physical annotations. First, a VLM acts as a \"physical architect\" to plan a \"Hierarchical Physical Blueprint\" defining material, functional, and kinematic constraints. Second, a physics-grounded diffusion model realizes this blueprint by synthesizing high-fidelity geometry alongside precise kinematic parameters via a novel KineVoxel Injection (KVI) mechanism. Experiments demonstrate that PhysForge produces functionally plausible, simulation-ready assets, providing a robust data engine for interactive 3D content and embodied agents.",
+    links: {
+      paper: "https://arxiv.org/abs/2605.05163",
+      code: "https://github.com/HKU-MMLab/PhysForge",
+      project: "https://hku-mmlab.github.io/PhysForge/"
+    },
+    bibtex: `@article{yang2026physforge,
+  title={PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World},
+  author={Yang, Yunhan and Wang, Chunshi and Ye, Junliang and Li, Yang and Chen, Zanxin and Huang, Zehuan and Mu, Yao and Chen, Zhuo and Guo, Chunchao and Liu, Xihui},
+  journal={arXiv preprint arXiv:2605.05163},
+  year={2026}
+}`
+  },
+  {
     title: "Hunyuan3D Studio: End-to-End AI Pipeline for Game-Ready 3D Asset Generation",
     authors: "**Wang Chunshi** is one of the core contributors of Part Generation",
     journal: "Tencent Hunyuan3D Technical Report",
