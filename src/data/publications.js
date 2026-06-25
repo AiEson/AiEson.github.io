@@ -102,11 +102,17 @@ const publications = [
     journal: "Computer Vision and Pattern Recognition (CVPR) Findings, 2026.",
     abstract: "While unified multimodal models have made progress in the 2D domain, extending this paradigm to 3D remains in its nascent stages, hindered by data scarcity, high generative complexity, and the lack of well-aligned semantic representations. To address these challenges, we introduce UniVerse3D, a foundational model that unifies 3D understanding, generation, and editing. To overcome the data bottleneck, we construct UniVerse-1M, a large-scale, reasoning-centric dataset comprising rich, interleaved text–image–3D data designed to foster deep reasoning and world-knowledge modeling. Architecturally, we adopt a hybrid design in which a powerful Vision Language Model serves as the multimodal “brain” for complex understanding and reasoning, while a 3D diffusion decoder specializes in high-quality content creation and editing. This setup introduces 3D modeling capabilities while preserving the pretrained multimodal priors of the VLM. Driven by our proposed dataset and architectural design, UniVerse3D effectively incorporates vision–language knowledge into the 3D domain, enabling fine-grained 3D understanding, extending generation capabilities from descriptive synthesis to concept-level, reasoning-driven 3D creation, and supporting stable, consistent text-guided 3D editing.",
     links: {
-      paper: null,
+      paper: "https://openaccess.thecvf.com/content/CVPR2026F/papers/Ye_UniVerse3D_Emerging_Properties_of_Unified_Multimodal_Models_in_3D_Understanding_CVPRF_2026_paper.pdf",
       code: null,
       project: null
     },
-    bibtex: `Coming soon...`
+    bibtex: `@inproceedings{ye2026universe3d,
+  title={UniVerse3D: Emerging Properties of Unified Multimodal Models in 3D Understanding and Generation},
+  author={Ye, Junliang and Huang, Zehuan and Qu, Yansong and Wang, Chunshi and Yang, Yunhan and Li, Yang and Luo, Yawei and Chen, Zhuo and Lu, Sheng and Zhu, Jun and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={613--623},
+  year={2026}
+}`
   },
   {
     title: "X-Part: high fidelity and structure coherent shape decomposition",
@@ -131,12 +137,12 @@ const publications = [
   {
     title: "P3-SAM: Native 3D Part Segmentation",
     authors: "[Ma Changfeng](https://www.njumeta.com/macf/), [Li Yang](https://yang-l1.github.io/), [Yan Xinhao](https://scholar.google.com/citations?user=rgfQe54AAAAJ), [Xu Jiachen](https://scholar.google.com/citations?user=GcznIXIAAAAJ), [Yang Yunhan](https://yhyang-myron.github.io/), **Wang Chunshi**, [Zhao Zibo](https://maikouuu.github.io/), Guo Yanwen, Chen Zhuo, Guo Chunchao",
-    journal: "arXiv, 2025. (preprint)",
+    journal: "European Conference on Computer Vision (ECCV), 2026.",
     abstract: "Segmenting 3D assets into their constituent parts is crucial for enhancing 3D understanding, facilitating model reuse, and supporting various applications such as part generation. However, current methods face limitations such as poor robustness when dealing with complex objects and cannot fully automate the process. In this paper, we propose a native 3D point-promptable part segmentation model termed P3-SAM, designed to fully automate the segmentation of any 3D objects into components. Inspired by SAM, P3-SAM consists of a feature extractor, multiple segmentation heads, and an IoU predictor, enabling interactive segmentation for users. We also propose an algorithm to automatically select and merge masks predicted by our model for part instance segmentation. Our model is trained on a newly built dataset containing nearly 3.7 million models with reasonable segmentation labels. Comparisons show that our method achieves precise segmentation results and strong robustness on any complex objects, attaining state-of-the-art performance. Our code will be released soon.",
     links: {
       paper: "https://arxiv.org/abs/2509.06784",
       code: null,
-      project: null
+      project: "https://murcherful.github.io/P3-SAM/"
     },
     bibtex: `@misc{ma2025p3samnative3dsegmentation,
       title={P3-SAM: Native 3D Part Segmentation}, 

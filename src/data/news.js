@@ -1,6 +1,10 @@
 const news = [
   {
-    date: "February 2025",
+    date: "June 2026",
+    content: "One paper accepted by ECCV'26"
+  },
+  {
+    date: "February 2026",
     content: "Two papers accepted by CVPR'26"
   },
   {
